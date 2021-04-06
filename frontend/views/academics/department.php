@@ -1,4 +1,6 @@
 <?php
+
+$toImages = Yii::$app->request->baseUrl . '/images';
 ?>
 
 <!-- Classic Breadcrumbs-->
@@ -20,7 +22,7 @@
     <div class="offset-lg-top-60 te">
         <p>The following is a list of our degree-granting academic departments and programs.</p>
     </div>
-    <div class="offset-top-30"><img src="images/academics-03-770x480.jpg" width="770" height="480" alt="" class="img-responsive reveal-inline-block"></div>
+    <div class="offset-top-30"><img src="<?= $toImages. '/academics-03-770x480.jpg' ?>" width="770" height="480" alt="" class="img-responsive reveal-inline-block"></div>
     <div class="offset-top-30">
         <div class="hr bg-gray-light"></div>
 

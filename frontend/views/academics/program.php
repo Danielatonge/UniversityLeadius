@@ -1,4 +1,5 @@
 <?php
+$toImages = Yii::$app->request->baseUrl . '/images';
 ?>
 
 <!-- Classic Breadcrumbs-->
@@ -76,7 +77,7 @@
                     </div>
 
                     <div class="offset-top-30"><img class="img-responsive d-inline-block"
-                                                    src="images/academics-01-770x480.jpg" width="770" height="480" alt=""></div>
+                                                    src="<?= $toImages. '/academics-01-770x480.jpg' ?>" width="770" height="480" alt=""></div>
                     <div class="offset-top-30">
                         <h6 class="font-weight-bold">Bachelor programs</h6>
                         <div class="text-subline"></div>
@@ -153,7 +154,7 @@
                             and academic graduate-level degrees that students consider.</p>
                     </div>
                     <div class="offset-top-30"><img class="img-responsive d-inline-block"
-                                                    src="images/academics-02-770x480.jpg" width="770" height="480" alt=""></div>
+                                                    src="<?= $toImages. '/academics-02-770x480.jpg' ?>" width="770" height="480" alt=""></div>
                     <div class="offset-top-30">
                         <h6 class="font-weight-bold">Master programs</h6>
                         <div class="text-subline"></div>
@@ -254,7 +255,7 @@
                             for non-degree seekers.</p>
                     </div>
                     <div class="offset-top-30"><img class="img-responsive d-inline-block"
-                                                    src="images/academics-06-770x480.jpg" width="770" height="480" alt=""></div>
+                                                    src="<?= $toImages. '/academics-06-770x480.jpg' ?>" width="770" height="480" alt=""></div>
                     <div class="offset-top-30">
                         <h6 class="font-weight-bold">Lead International University</h6>
                         <div class="text-subline"></div>
@@ -287,7 +288,7 @@
                             able to be greatly enhanced and strengthened as lifelong learning.</p>
                     </div>
                     <div class="offset-top-30"><img class="img-responsive d-inline-block"
-                                                    src="images/academics-07-770x480.jpg" width="770" height="480" alt=""></div>
+                                                    src="<?= $toImages. '/academics-07-770x480.jpg' ?>" width="770" height="480" alt=""></div>
                     <div class="offset-top-30">
                         <h6 class="font-weight-bold">Programs List</h6>
                         <div class="text-subline"></div>
