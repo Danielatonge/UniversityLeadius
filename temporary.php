@@ -1,7 +1,5 @@
 <?php
-
 use yii\helpers\Url;
-
 $toImages = Yii::$app->request->baseUrl . '/images';
 ?>
 
@@ -44,7 +42,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                 <li>
                                     <div class="unit flex-row align-items-center unit-spacing-xs">
                                         <div class="unit-left"><span class="icon mdi mdi-email-open text-middle"></span></div>
-                                        <div class="unit-body"><a href="mailto:leadius@admin.org">leadius@admin.org</a></div>
+                                        <div class="unit-body"><a href="mailto:#">leadius@admin.org</a></div>
                                     </div>
                                 </li>
                             </ul>
@@ -64,7 +62,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
 
                     <div class="rd-navbar-brand"><a class="d-inline-block" href="<?= Url::to(['site/index']) ?>">
                             <div class="unit align-items-sm-center unit-xl flex-column flex-xxl-row unit-spacing-custom">
-                                <div class="unit-left mb-0"><img width='170' height='172' src='<?= $toImages. '/logo.png' ?>' alt='' />
+                                <div class="unit-left mb-0"><img width='170' height='172' src='<?= $toImages. '/logo.png' ?>'  alt='' />
                                 </div>
                                 <div class="unit-body text-xxl-left">
                                     <div class="rd-navbar-brand-title">Lead International</div>
@@ -77,59 +75,62 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                             <div class="rd-navbar-mobile-header-wrap">
                                 <!--Navbar Brand Mobile-->
                                 <div class="rd-navbar-mobile-brand"><a href="index.html"><img width='136' height='138'
-                                                                                              src='<?= $toImages. '/logo.png' ?>' alt='' /></a></div>
+                                                                                              src='<?= $toImages. '/logo.png' ?>' alt='' />
+                                    </a></div>
                             </div>
                             <!-- RD Navbar Nav-->
                             <ul class="rd-navbar-nav">
                                 <li><a href="<?= Url::to(['site/about']) ?>">About Us</a>
                                 </li>
-                                <li><a href="#">Admission</a>
+                                <li><a href="<?= Url::to(['admission/index']) ?>">Admission</a>
                                     <ul class="rd-navbar-dropdown">
-                                        <li><a href="<?= Url::to(['admission/apply-general']) ?>">APPLY TO LEADIUS</a>
+                                        <li><a href="<?= Url::to(['admission/index']) ?>">First-Year</a>
                                         </li>
-                                        <li><a href="<?= Url::to(['admission/transfer-readmission']) ?>">Transfer and Readmission</a>
+                                        <li><a href="<?= Url::to(['admission/index']) ?>">Transfer and Readmission</a>
                                         </li>
-                                        <li><a href="<?= Url::to(['admission/testimonial']) ?>">Testimonials</a>
+                                        <li><a href="<?= Url::to(['admission/index']) ?>">Graduate</a>
                                         </li>
-                                        <li><a href="#">Dashboard</a>
+                                        <li><a href="<?= Url::to(['admission/index']) ?>">International</a>
+                                        </li>
+                                        <li><a href="<?= Url::to(['admission/index']) ?>">Visiting Students</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Academics</a>
+                                <li><a href="index.html#">Academics</a>
                                     <div class="rd-navbar-megamenu">
                                         <div class="row section-relative">
                                             <ul class="col-lg-3">
                                                 <li>
-                                                    <h6>Programs</h6>
+                                                    <h6><a href="<?= Url::to(['academics/program']) ?>">Programs </a></h6>
                                                     <ul class="list-unstyled offset-lg-top-20">
-                                                        <li><a href="<?= Url::to(['academics/program']) ?>">Undergraduate Study</a></li>
-                                                        <li><a href="<?= Url::to(['academics/program']) ?>">Graduate &amp; Professional Study</a></li>
-                                                        <li><a href="<?= Url::to(['academics/program']) ?>">Non-Degree Offerings</a></li>
-                                                        <li><a href="<?= Url::to(['academics/program']) ?>">Online Learning</a></li>
+                                                        <li><a href="academics.html#tabs-7-1">Undergraduate Study</a></li>
+                                                        <li><a href="academics.html#tabs-7-2">Graduate &amp; Professional Study</a></li>
+                                                        <li><a href="academics.html#tabs-7-3">Non-Degree Offerings</a></li>
+                                                        <li><a href="academics.html#tabs-7-4">Online Learning</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                             <ul class="col-lg-3">
                                                 <li>
-                                                    <h6>Faculties</h6>
+                                                    <h6><a href="<?= Url::to(['academics/department']) ?>">Departments </a></h6>
                                                     <ul class="list-unstyled offset-lg-top-20">
-                                                        <li><a href="<?= Url::to(['academics/f-arts']) ?>">Arts</a></li>
-                                                        <li><a href="<?= Url::to(['academics/f-science']) ?>">Science</a></li>
-                                                        <li><a href="<?= Url::to(['academics/f-engineering']) ?>">Engineering</a></li>
-                                                        <li><a href="<?= Url::to(['academics/f-education']) ?>">Education</a></li>
-                                                        <li><a href="<?= Url::to(['academics/f-business']) ?>">Business</a></li>
+                                                        <li><a href="<?= Url::to(['academics/department']) ?>">Business &amp; Administration</a></li>
+                                                        <li><a href="<?= Url::to(['academics/department']) ?>">Computer Science</a></li>
+                                                        <li><a href="<?= Url::to(['academics/department']) ?>">Applied Maths</a></li>
+                                                        <li><a href="<?= Url::to(['academics/department']) ?>">Applied Physics</a></li>
+                                                        <li><a href="<?= Url::to(['academics/department']) ?>">Philosophy</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                             <ul class="col-lg-3">
                                                 <li>
-                                                    <h6>Degrees and cost</h6>
+                                                    <h6>Degrees</h6>
                                                     <ul class="list-unstyled offset-lg-top-20">
-                                                        <li><a href="<?= Url::to(['academics/undergrad-cost']) ?>">Undergraduate</a></li>
-                                                        <li><a href="<?= Url::to(['academics/grad-cost']) ?>">Graduate</a></li>
-                                                        <li><a href="<?= Url::to(['academics/postgrad-cost']) ?>">Post-doctorate</a></li>
-                                                        <li><a href="<?= Url::to(['academics/others-cost']) ?>">Others</a></li>
-                                                        <li><a href="<?= Url::to(['academics/financial-aid']) ?>">Financial Aid</a></li>
+                                                        <li><a href="#">Bachelors in Science</a></li>
+                                                        <li><a href="#">Bachelors in Arts</a></li>
+                                                        <li><a href="#">Masters in Science</a></li>
+                                                        <li><a href="#">Masters in Arts</a></li>
+                                                        <li><a href="#">Accomplishment</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -139,26 +140,24 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                                     <ul class="list-unstyled offset-lg-top-20">
                                                         <li><a href="#">News</a></li>
                                                         <li><a href="#">Upcoming Events</a></li>
-                                                        <li><a href="<?= Url::to(['academics/internship-jobs']) ?>">Internships &amp; Jobs</a></li>
+                                                        <li><a href="#">Internships</a></li>
                                                         <li><a href="#">Resources &amp; Advising</a></li>
-                                                        <li><a href="<?= Url::to(['academics/beyond']) ?>">Beyond the Classroom</a></li>
+                                                        <li><a href="#">Beyond the Classroom</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="#">Campus Life</a>
+                                <li><a href="index.html#">Campus Life</a>
                                     <ul class="rd-navbar-dropdown">
-                                        <li><a href="<?= Url::to(['campus-life/health-safety']) ?>">Health, Wellness &amp; Safety</a>
+                                        <li><a href="#">Health, Wellness &amp; Safety</a>
                                         </li>
-                                        <li><a href="<?= Url::to(['campus-life/feed-house']) ?>">Feeding & Housing</a>
+                                        <li><a href="#">Housing</a>
                                         </li>
-                                        <li><a href="<?= Url::to(['campus-life/gallery-general']) ?>">Gallery</a>
+                                        <li><a href="#">Gallery</a>
                                         </li>
-                                        <li><a href="<?= Url::to(['campus-life/activities']) ?>">Activities</a>
-                                        </li>
-                                        <li><a href="<?= Url::to(['campus-life/covid-19']) ?>">COVID-19</a>
+                                        <li><a href="#">Activities</a>
                                         </li>
                                     </ul>
                                 </li>

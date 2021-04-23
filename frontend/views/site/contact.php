@@ -91,8 +91,8 @@ $this->params['breadcrumbs'][] = $this->title;
                             </div>
                             <div class="offset-top-15">
                                 <ul class="list list-unstyled">
-                                    <li><span class="icon icon-xs text-madison mdi mdi-phone text-middle"></span><a class="text-middle inset-left-10 text-dark" href="tel:1-800-1234-567">1-800-1234-567</a></li>
-                                    <li><span class="icon icon-xs text-madison mdi mdi-phone text-middle"></span><a class="text-middle inset-left-10 text-dark" href="tel:1-800-6547-321">1-800-6547-321</a></li>
+                                    <li><span class="icon icon-xs text-madison mdi mdi-phone text-middle"></span><a class="text-middle inset-left-10 text-dark" href="tel:8-020-618-0645">8-020-618-0645</a></li>
+                                    <li><span class="icon icon-xs text-madison mdi mdi-phone text-middle"></span><a class="text-middle inset-left-10 text-dark" href="tel:819-493-3499">819-493-3499</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -103,7 +103,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             </div>
                             <div class="offset-top-15">
                                 <ul class="list list-unstyled">
-                                    <li><span class="icon icon-xs text-madison mdi mdi-email-outline text-middle"></span><a class="text-primary text-middle inset-left-10" href="mailto:info@demolink.org">info@demolink.org</a></li>
+                                    <li><span class="icon icon-xs text-madison mdi mdi-email-outline text-middle"></span><a class="text-primary text-middle inset-left-10" href="mailto:leadius@admin.org">leadius@admin.org</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <div class="unit flex-row unit-spacing-xs">
                                     <div class="unit-left"><span class="icon icon-xs mdi mdi-map-marker text-madison"></span></div>
                                     <div class="unit-body">
-                                        <p><a class="text-dark" href="contacts.html#">2130 Fulton Street San Diego, CA 94117-1080 USA</a></p>
+                                        <p><a class="text-dark" href="contacts.html#">Sherbrooke-Quebec, Canada</a></p>
                                     </div>
                                 </div>
                             </div>
