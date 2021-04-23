@@ -15,15 +15,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
-@font-face {
-	font-family: 'Intro';
-	src: url("../fonts/IntroDemo-BlackCAPS.eot");
-	src: url("../fonts/fontawesome-webfont.eot") format("embedded-opentype"), 
-	url("../fonts/IntroDemo-BlackCAPS.woff2") format("woff2"), 
-	url("../fonts/IntroDemo-BlackCAPS.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-}
+ 
 
 .fa {
 	display: inline-block;
