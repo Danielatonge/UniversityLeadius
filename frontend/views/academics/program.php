@@ -2,20 +2,7 @@
 $toImages = Yii::$app->request->baseUrl . '/images';
 ?>
 
-<!-- Classic Breadcrumbs-->
-<section class="section breadcrumb-classic context-dark">
-    <div class="container">
-        <h1>Programs</h1>
-        <div class="offset-top-10 offset-md-top-35">
-            <ul class="list-inline list-inline-lg list-inline-dashed p">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="academics.html#">Academics</a></li>
-                <li>Programs
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
+<?= $this->render('breadcrumb', ["viewName" => "Programs"]) ?>
 
 <section class="section section-xl bg-default">
     <div class="container text-justify">

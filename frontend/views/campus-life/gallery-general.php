@@ -7,24 +7,10 @@
 $toImages = Yii::$app->request->baseUrl . '/images';
 ?>
 
-<!-- Classic Breadcrumbs-->
-<section class="section breadcrumb-classic context-dark">
-    <div class="container">
-        <h1> APPLY TO LEADIUS</h1>
-        <div class="offset-top-10 offset-md-top-35">
-            <ul class="list-inline list-inline-lg list-inline-dashed p">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="apply-general.html">Admission</a></li>
-                <li>APPLY TO LEADIUS
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
+<?= $this->render('breadcrumb', ["viewName" => "Gallery"]) ?>
 <!--Gallery-->
 <section class="section section-xl bg-default">
-    <h2>Gallery</h2>
-    <hr class="divider bg-madison">
+
     <div class="offset-top-60">
         <div class="isotope-wrap">
             <!-- Isotope Content-->
@@ -59,7 +45,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                     <div class="col-md-6 col-xl-3 isotope-item" data-filter="Tab 1">
                                         <figure class="thumbnail-classic">
                                             <div class="thumbnail-classic-img-wrap"><img
-                                                    src="<?= $toImages. '/portfolio/gallery-02-480x700.jpg' ?>" alt=""
+                                                    src="<?= $toImages. '/portfolio/gallery-02-480x350.jpg' ?>" alt=""
                                                     width="480" height="350" />
                                             </div>
                                             <figcaption class="thumbnail-classic-caption text-center">
@@ -73,7 +59,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                                     class="thumbnail-classic-link icon icon-xxs fa fa-search-plus"
                                                     href="<?= $toImages. '/portfolio/gallery-02-original.jpg' ?>"
                                                     data-lightgallery="item"><img
-                                                        src="<?= $toImages. '/portfolio/gallery-02-480x700.jpg' ?>" alt=""
+                                                        src="<?= $toImages. '/portfolio/gallery-02-480x350.jpg' ?>" alt=""
                                                         width="480" height="350" /></a>
                                             </figcaption>
                                         </figure>
@@ -81,7 +67,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                     <div class="col-md-6 col-xl-3 isotope-item" data-filter="Tab 1">
                                         <figure class="thumbnail-classic">
                                             <div class="thumbnail-classic-img-wrap"><img
-                                                    src="<?= $toImages. '/portfolio/gallery-03-480x700.jpg' ?>" alt=""
+                                                    src="<?= $toImages. '/portfolio/gallery-03-480x350.jpg' ?>" alt=""
                                                     width="480" height="350" />
                                             </div>
                                             <figcaption class="thumbnail-classic-caption text-center">
@@ -95,7 +81,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                                     class="thumbnail-classic-link icon icon-xxs fa fa-search-plus"
                                                     href="<?= $toImages. '/portfolio/gallery-03-original.jpg' ?>"
                                                     data-lightgallery="item"><img
-                                                        src="<?= $toImages. '/portfolio/gallery-03-480x700.jpg' ?>" alt=""
+                                                        src="<?= $toImages. '/portfolio/gallery-03-480x350.jpg' ?>" alt=""
                                                         width="480" height="350" /></a>
                                             </figcaption>
                                         </figure>
@@ -125,7 +111,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                     <div class="col-md-6 col-xl-3 isotope-item" data-filter="Tab 1">
                                         <figure class="thumbnail-classic">
                                             <div class="thumbnail-classic-img-wrap"><img
-                                                    src="images/portfolio/gallery-05-480x700.jpg" alt=""
+                                                    src="<?= $toImages. '/portfolio/gallery-05-480x700.jpg' ?>" alt=""
                                                     width="480" height="700" />
                                             </div>
                                             <figcaption class="thumbnail-classic-caption text-center">
@@ -137,9 +123,9 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                                     an interdisciplinary approach to research that spans arts to
                                                     engineering, medicine to education.</p><a
                                                     class="thumbnail-classic-link icon icon-xxs fa fa-search-plus"
-                                                    href="images/portfolio/gallery-05-original.jpg"
+                                                    href="<?= $toImages. '/portfolio/gallery-05-original.jpg' ?>"
                                                     data-lightgallery="item"><img
-                                                        src="images/portfolio/gallery-05-480x700.jpg" alt=""
+                                                        src="<?= $toImages. '/portfolio/gallery-05-480x700.jpg' ?>" alt=""
                                                         width="480" height="700" /></a>
                                             </figcaption>
                                         </figure>
@@ -147,7 +133,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                     <div class="col-md-6 col-xl-3 isotope-item" data-filter="Tab 1">
                                         <figure class="thumbnail-classic">
                                             <div class="thumbnail-classic-img-wrap"><img
-                                                    src="images/portfolio/gallery-06-480x350.jpg" alt=""
+                                                    src="<?= $toImages. '/portfolio/gallery-06-480x350.jpg' ?>" alt=""
                                                     width="480" height="350" />
                                             </div>
                                             <figcaption class="thumbnail-classic-caption text-center">
@@ -159,9 +145,9 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                                     an interdisciplinary approach to research that spans arts to
                                                     engineering, medicine to education.</p><a
                                                     class="thumbnail-classic-link icon icon-xxs fa fa-search-plus"
-                                                    href="images/portfolio/gallery-06-original.jpg"
+                                                    href="<?= $toImages. '/portfolio/gallery-06-original.jpg' ?>"
                                                     data-lightgallery="item"><img
-                                                        src="images/portfolio/gallery-06-480x350.jpg" alt=""
+                                                        src="<?= $toImages. '/portfolio/gallery-06-480x350.jpg' ?>" alt=""
                                                         width="480" height="350" /></a>
                                             </figcaption>
                                         </figure>
@@ -169,7 +155,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                     <div class="col-md-6 col-xl-3 isotope-item" data-filter="Tab 1">
                                         <figure class="thumbnail-classic">
                                             <div class="thumbnail-classic-img-wrap"><img
-                                                    src="images/portfolio/gallery-04-480x350.jpg" alt=""
+                                                    src="<?= $toImages. '/portfolio/gallery-04-480x350.jpg' ?>" alt=""
                                                     width="480" height="350" />
                                             </div>
                                             <figcaption class="thumbnail-classic-caption text-center">
@@ -181,9 +167,9 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                                     an interdisciplinary approach to research that spans arts to
                                                     engineering, medicine to education.</p><a
                                                     class="thumbnail-classic-link icon icon-xxs fa fa-search-plus"
-                                                    href="images/portfolio/gallery-04-original.jpg"
+                                                    href="<?= $toImages. '/portfolio/gallery-04-original.jpg' ?>"
                                                     data-lightgallery="item"><img
-                                                        src="images/portfolio/gallery-04-480x350.jpg" alt=""
+                                                        src="<?= $toImages. '/portfolio/gallery-04-480x350.jpg' ?>" alt=""
                                                         width="480" height="350" /></a>
                                             </figcaption>
                                         </figure>
@@ -191,7 +177,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                     <div class="col-md-6 col-xl-3 isotope-item" data-filter="Tab 1">
                                         <figure class="thumbnail-classic">
                                             <div class="thumbnail-classic-img-wrap"><img
-                                                    src="images/portfolio/gallery-09-480x350.jpg" alt=""
+                                                    src="<?= $toImages. '/portfolio/gallery-09-480x350.jpg' ?>" alt=""
                                                     width="480" height="350" />
                                             </div>
                                             <figcaption class="thumbnail-classic-caption text-center">
@@ -203,9 +189,9 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                                     an interdisciplinary approach to research that spans arts to
                                                     engineering, medicine to education.</p><a
                                                     class="thumbnail-classic-link icon icon-xxs fa fa-search-plus"
-                                                    href="images/portfolio/gallery-09-original.jpg"
+                                                    href="<?= $toImages. '/portfolio/gallery-09-original.jpg' ?>"
                                                     data-lightgallery="item"><img
-                                                        src="images/portfolio/gallery-09-480x350.jpg" alt=""
+                                                        src="<?= $toImages. '/portfolio/gallery-09-480x350.jpg' ?>" alt=""
                                                         width="480" height="350" /></a>
                                             </figcaption>
                                         </figure>
@@ -213,7 +199,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                     <div class="col-md-6 col-xl-3 isotope-item" data-filter="Tab 1">
                                         <figure class="thumbnail-classic">
                                             <div class="thumbnail-classic-img-wrap"><img
-                                                    src="images/portfolio/gallery-08-480x350.jpg" alt=""
+                                                    src="<?= $toImages. '/portfolio/gallery-08-480x350.jpg' ?>" alt=""
                                                     width="480" height="350" />
                                             </div>
                                             <figcaption class="thumbnail-classic-caption text-center">
@@ -225,9 +211,9 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                                     an interdisciplinary approach to research that spans arts to
                                                     engineering, medicine to education.</p><a
                                                     class="thumbnail-classic-link icon icon-xxs fa fa-search-plus"
-                                                    href="images/portfolio/gallery-08-original.jpg"
+                                                    href="<?= $toImages. '/portfolio/gallery-08-original.jpg' ?>"
                                                     data-lightgallery="item"><img
-                                                        src="images/portfolio/gallery-08-480x350.jpg" alt=""
+                                                        src="<?= $toImages. '/portfolio/gallery-08-480x350.jpg' ?>" alt=""
                                                         width="480" height="350" /></a>
                                             </figcaption>
                                         </figure>

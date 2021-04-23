@@ -7,20 +7,7 @@ use yii\helpers\Url;
  */
 ?>
 
-<!-- Classic Breadcrumbs-->
-<section class="section breadcrumb-classic context-dark">
-    <div class="container">
-        <h1> APPLY TO LEADIUS</h1>
-        <div class="offset-top-10 offset-md-top-35">
-            <ul class="list-inline list-inline-lg list-inline-dashed p">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="apply-general.html">Admission</a></li>
-                <li>APPLY TO LEADIUS
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
+<?= $this->render('breadcrumb', ["viewName" => "Graduate Teaching Assistantship"]) ?>
 
 <!-- Boxed Grid System-->
 <section class="section section-grid-demonstration section-xl bg-default">
