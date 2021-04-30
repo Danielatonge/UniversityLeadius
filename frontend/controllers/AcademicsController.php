@@ -76,5 +76,13 @@ class AcademicsController extends \yii\web\Controller
     {
         return $this->render('graduate-ta');
     }
-
+    
+    public function actionOurStaff() 
+    {
+        return $this->render('our-staff');
+    }
+    public function actionCalendar() 
+    {
+        return $this->render('calendar');
+    }
 }

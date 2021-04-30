@@ -5,6 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+use yii\helpers\Url;
 ?>
 <!-- Classic Breadcrumbs-->
 <section class="section breadcrumb-classic context-dark">
@@ -12,8 +13,8 @@
         <h1> <?= $viewName ?></h1>
         <div class="offset-top-10 offset-md-top-35">
             <ul class="list-inline list-inline-lg list-inline-dashed p">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Campus Life</a></li>
+                <li><a href="<?= Url::to(['site/index']) ?>">Home</a></li>
+                <li>Admission</li>
                 <li><?= $viewName ?>
                 </li>
             </ul>

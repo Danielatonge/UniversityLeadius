@@ -25,9 +25,5 @@ class CampusLifeController extends \yii\web\Controller
     {
         return $this->render('activities');
     }
-    public function actionCovid19()
-    {
-        return $this->render('covid-19');
-    }
-
+    
 }

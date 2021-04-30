@@ -13,7 +13,7 @@ use yii\helpers\Url;
     <div class="container">
         <h3 class="font-weight-bold">Current LIUS Faculty Job Postings</h3>
         <hr class="divider bg-madison">
-        <p>Learn more about the employee agreements, benefits and services offered to staff and faculty at LIUS. Access the following pages for  <a href="<?= Url::to(['academics/job-student']) ?>">Current Job Postings for Students</a> and for <a href="<?= Url::to(['academics/graduate-ta']) ?>">Current Graduate Teaching Assistantship Postings</a></p>
+        <p>Learn more about the employee agreements, benefits and services offered to staff and faculty at LIUS. Access the following pages for  <a href="<?= Url::to(['academics/job-student']) ?>"><b>Current Job Postings for Students</b></a> and for <a href="<?= Url::to(['academics/graduate-ta']) ?>"><b>Current Graduate Teaching Assistantship Postings</b></a></p>
         <div class="row row-30 offset-top-60 text-md-left">
 
             <div class="col-6">

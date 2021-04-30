@@ -1,5 +1,4 @@
 <?php
-
 $toImages = Yii::$app->request->baseUrl . '/images';
 ?>
 
@@ -11,12 +10,12 @@ $toImages = Yii::$app->request->baseUrl . '/images';
         <div class="row row-50 justify-content-xl-between justify-content-sm-center">
             <div class="col-lg-3 col-xl-2">
                 <!--Footer brand--><a class="d-inline-block" href="index.html"><img width='170' height='172'
-                                                                                    src='<?= $toImages. '/logo.png' ?>' alt='' />
+                                                                                    src='<?= $toImages . '/logo.png' ?>' alt='' />
                     <div>
                         <h6 class="barnd-name font-weight-bold offset-top-25">Lead International</h6>
                     </div>
                     <div>
-                        <p class="brand-slogan text-gray font-italic font-accent">University Of Sherbrooke</p>
+                        <p class="brand-slogan font-italic font-accent">University Of Sherbrooke</p>
                     </div>
                 </a>
             </div>
@@ -29,8 +28,8 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                             <div class="unit flex-row align-items-center unit-spacing-xs">
                                 <div class="unit-left"><span class="icon mdi mdi-phone text-middle icon-xs text-madison"></span>
                                 </div>
-                                <div class="unit-body"><a class="text-dark" href="tel:#">8-020-618-0645,</a> <a
-                                        class="d-block d-lg-inline-block text-dark" href="tel:#">819-493-3499</a>
+                                <div class="unit-body"><a class="text-dark" href="tel:#">+1-707-654-3561,</a> <a
+                                        class="d-block d-lg-inline-block text-dark" href="tel:#">+1-724-569-6367</a>
                                 </div>
                             </div>
                         </li>
@@ -72,12 +71,12 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                 </div>
                 <div class="offset-top-10">
                     <form class="rd-mailform form-subscribe" data-form-output="form-output-global" data-form-type="subscribe"
-                          method="post" action="https://livedemo00.template-help.com/wt_59029_v3/bat/rd-mailform.php">
+                          method="post" action="">
                         <div class="form-wrap">
                             <div class="input-group input-group-sm">
                                 <input class="form-input" placeholder="Your e-mail" type="email" name="email"
                                        data-constraints="@Required @Email"><span class="input-group-btn">
-                    <button class="btn btn-sm button-primary" type="submit">Subscribe</button></span>
+                                    <button class="btn btn-sm button-primary" type="submit">Subscribe</button></span>
                             </div>
                         </div>
                     </form>
@@ -88,7 +87,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
     <div class="bg-madison context-dark">
         <div class="container text-lg-left section-5">
             <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>.&nbsp;</span><span>All
-            Rights Reserved</span><span>.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
+                    Rights Reserved</span><span>.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
         </div>
     </div>
 </footer>

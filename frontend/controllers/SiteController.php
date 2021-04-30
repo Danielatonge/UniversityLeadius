@@ -134,6 +134,11 @@ class SiteController extends Controller
             ]);
         }
     }
+    
+    public function actionCovid19()
+    {
+        return $this->render('covid-19');
+    }
 
     /**
      * Displays about page.

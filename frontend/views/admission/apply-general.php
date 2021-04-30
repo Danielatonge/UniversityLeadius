@@ -1,31 +1,13 @@
 <?php ?>
 
 <!-- Classic Breadcrumbs-->
-<section class="section breadcrumb-classic context-dark">
-    <div class="container">
-        <h1> APPLY TO LEADIUS</h1>
-        <div class="offset-top-10 offset-md-top-35">
-            <ul class="list-inline list-inline-lg list-inline-dashed p">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="apply-general.html">Admission</a></li>
-                <li>APPLY TO LEADIUS
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
+<?= $this->render('breadcrumb', ["viewName" => "Information for Applicants"]) ?>
 <!--A Meeting of Minds-->
 <section class="section section-xl bg-default">
     <div class="container">
         <div class="row row-50">
             <div class="col-lg-12 order-lg-1 text-lg-left">
                 <div class="inset-lg-right-30">
-                    <h2 class="font-weight-bold">How to Apply</h2>
-                    <div class="offset-top-30 offset-sm-top-30">
-                        <p>To apply for admission to LIUS, please submit a completed application form, including all required
-                            documentation and fees, to the Office of the Registrar.</p>
-                    </div>
-
                     <h2 class="font-weight-bold">E-mail Communication</h2>
                     <p>E-mail is one of the official means of communication between LIUS and its students. All students are
                         assigned a LIUS e-mail address upon course registration. The e-mail address assigned to a student by the

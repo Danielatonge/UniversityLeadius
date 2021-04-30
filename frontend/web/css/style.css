@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,700%7CMerriweather:400,300,300italic,400italic,700,700italic");
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Righteous&display=swap');
 
 /**
  * [Table of contents]
@@ -3790,7 +3789,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .link-gray-dark, .link-gray-dark:active, .link-gray-dark:focus {
-	color: #888888;
+	color: #555;
 }
 
 .link-gray-dark:hover {
@@ -4008,7 +4007,7 @@ body {
 	font-size: 14px;
 	line-height: 1.57143;
 	font-weight: 400;
-	color: #888888;
+	color: #555;
 	background-color: #fff;
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -4195,7 +4194,7 @@ h3 .small, .h3 .small,
 h4 .small, .h4 .small,
 h5 .small, .h5 .small,
 h6 .small, .h6 .small {
-	color: #888888;
+	color: #555;
 }
 
 h1.text-primary a:hover, .h1.text-primary a:hover,
@@ -4795,7 +4794,7 @@ mark, .mark {
 }
 
 .page .text-dark {
-	color: #888888;
+	color: #555;
 }
 
 .page a.text-dark:hover, .page a.text-dark:focus {
@@ -5872,7 +5871,7 @@ a.thumbnail:hover {
 	font-family: "Material Design Icons";
 	font-size: 21px;
 	font-weight: 400;
-	color: #888888;
+	color: #555;
 	content: '\f465';
 }
 
@@ -6079,7 +6078,7 @@ a.icon {
 
 .icon-gray-light-filled {
 	border: none;
-	color: #888888;
+	color: #555;
 	background: #e5e5e5;
 }
 
@@ -6279,7 +6278,7 @@ a.icon {
 }
 
 .progress-bar-circle.progress-bar-modern span {
-	color: #888888;
+	color: #555;
 }
 
 .list-group-item > .badge {
@@ -6450,7 +6449,7 @@ a.icon {
 }
 
 .dropcap-dark:first-letter {
-	color: #888888;
+	color: #555;
 }
 
 .alert-classic {
@@ -7913,7 +7912,7 @@ textarea.form-input {
 
 .form-label-outside, .form-label-outside.focus, .form-label-outside.auto-fill {
 	transform: none;
-	color: #888888;
+	color: #555;
 	font-size: 12px;
 }
 
@@ -8254,7 +8253,7 @@ textarea.form-input {
 	margin-top: 1px;
 	outline: none;
 	cursor: pointer;
-	border: 1px solid #888888;
+	border: 1px solid #555;
 }
 
 .radio .radio-custom-dummy,
@@ -11171,7 +11170,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	padding-left: 45px;
 	list-style-type: decimal;
 	position: relative;
-	color: #888888;
+	color: #555;
 }
 
 .search-list-item > * {
@@ -18484,20 +18483,20 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .select2-container--bootstrap .select2-search__field::-webkit-input-placeholder {
-	color: #888888;
+	color: #555;
 }
 
 .select2-container--bootstrap .select2-search__field:-moz-placeholder {
-	color: #888888;
+	color: #555;
 }
 
 .select2-container--bootstrap .select2-search__field::-moz-placeholder {
-	color: #888888;
+	color: #555;
 	opacity: 1;
 }
 
 .select2-container--bootstrap .select2-search__field:-ms-input-placeholder {
-	color: #888888;
+	color: #555;
 }
 
 .select2-container--bootstrap .select2-results__option[role=group] {
@@ -18553,7 +18552,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .select2-container--bootstrap .select2-results__group {
-	color: #888888;
+	color: #555;
 	display: block;
 	padding: 15px 27px;
 	font-weight: 400;
@@ -18659,7 +18658,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .select2-container--bootstrap .select2-selection--single .select2-selection__placeholder {
-	color: #888888;
+	color: #555;
 }
 
 .select2-container--bootstrap .select2-selection--multiple {
@@ -18680,7 +18679,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__placeholder {
-	color: #888888;
+	color: #555;
 	float: left;
 	margin-top: 5px;
 }
@@ -19151,7 +19150,7 @@ td .stepper {
 	font-size: 16px;
 	font-family: "Material Design Icons";
 	cursor: pointer;
-	color: #888888;
+	color: #555;
 	transition: .3s all ease;
 }
 
@@ -19636,7 +19635,7 @@ td .stepper {
 	font-size: 14px;
 	font-weight: 400;
 	text-align: center;
-	color: #888888;
+	color: #555;
 }
 
 .rdc-month {
@@ -19749,7 +19748,7 @@ td .stepper {
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18);
 	}
 	.rd-calendar-fullwidth .rd-calendar .rdc-table_day {
-		color: #888888;
+		color: #555;
 		font-size: 22px;
 		padding-left: 15px;
 		text-align: left;
@@ -20329,7 +20328,7 @@ td .stepper {
 .card-corporate .collapse {
 	position: relative;
 	z-index: 1;
-	color: #888888;
+	color: #555;
 	border-radius: 0 0 6px 6px;
 }
 
@@ -20430,7 +20429,7 @@ td .stepper {
 .card-modern .collapse {
 	position: relative;
 	z-index: 1;
-	color: #888888;
+	color: #555;
 	border-radius: 0 0 6px 6px;
 }
 
@@ -21992,7 +21991,7 @@ html .rd-file-picker input[type="file"] {
 .rd-navbar-default.rd-navbar-static .rd-navbar-search-form .form-label.focus, .rd-navbar-transparent.rd-navbar-static .rd-navbar-search-form .form-label.focus, .rd-navbar-center.rd-navbar-static .rd-navbar-search-form .form-label.focus, .rd-navbar-minimal.rd-navbar-static .rd-navbar-search-form .form-label.focus {
 	font-size: 14px;
 	top: -9px;
-	color: #888888;
+	color: #555;
 }
 
 .rd-navbar-default.rd-navbar-static .rd-navbar-search-form .rd-navbar-search-form-input, .rd-navbar-transparent.rd-navbar-static .rd-navbar-search-form .rd-navbar-search-form-input, .rd-navbar-center.rd-navbar-static .rd-navbar-search-form .rd-navbar-search-form-input, .rd-navbar-minimal.rd-navbar-static .rd-navbar-search-form .rd-navbar-search-form-input {
@@ -22194,8 +22193,8 @@ html .rd-file-picker input[type="file"] {
 .rd-navbar-default.rd-navbar-static .rd-navbar-brand-slogan {
 	font-size: 12px;
 	font-style: italic;
-	font-weight: 700;
-	color: #888888;
+	font-weight: 600;
+	color: #555;
 	font-family: "Merriweather", "Times New Roman", Times, serif;
 }
 
@@ -22330,7 +22329,7 @@ html .rd-file-picker input[type="file"] {
 }
 
 .rd-navbar-default.rd-navbar-static .rd-navbar-cart a {
-	color: #888888;
+	color: #555;
 	font-family: "Merriweather", "Times New Roman", Times, serif;
 	font-weight: 700;
 	font-size: 16px;
@@ -22607,7 +22606,7 @@ html .rd-file-picker input[type="file"] {
 .rd-navbar-transparent.rd-navbar-static .rd-navbar-brand-slogan {
 	font-size: 10px;
 	font-style: italic;
-	font-weight: 700;
+	font-weight: 300;
 	color: #fff;
 	font-family: "Merriweather", "Times New Roman", Times, serif;
 }
@@ -22781,7 +22780,7 @@ html .rd-file-picker input[type="file"] {
 }
 
 .rd-navbar-center.rd-navbar-static .rd-navbar-top-panel {
-	color: #888888;
+	color: #555;
 }
 
 .rd-navbar-center.rd-navbar-static .rd-navbar-top-panel .container {
@@ -22824,8 +22823,8 @@ html .rd-file-picker input[type="file"] {
 .rd-navbar-center.rd-navbar-static .rd-navbar-top-panel .rd-navbar-brand-slogan {
 	font-size: 18px;
 	font-style: italic;
-	font-weight: 700;
-	color: #888888;
+	font-weight: 600;
+	color: #555;
 	font-family: "Merriweather", "Times New Roman", Times, serif;
 }
 
@@ -22859,7 +22858,7 @@ html .rd-file-picker input[type="file"] {
 }
 
 .rd-navbar-center.rd-navbar-static .rd-navbar-cart a {
-	color: #888888;
+	color: #555;
 	font-family: "Merriweather", "Times New Roman", Times, serif;
 	font-weight: 700;
 }
@@ -22992,7 +22991,7 @@ html .rd-file-picker input[type="file"] {
 .rd-navbar-minimal.rd-navbar-static .rd-navbar-brand-slogan {
 	font-size: 12px;
 	font-style: italic;
-	color: #888888;
+	color: #555;
 	font-family: "Merriweather", "Times New Roman", Times, serif;
 }
 
@@ -23106,7 +23105,7 @@ html .rd-file-picker input[type="file"] {
 }
 
 .rd-navbar-minimal.rd-navbar-static .rd-navbar-cart a {
-	color: #888888;
+	color: #555;
 	font-family: "Merriweather", "Times New Roman", Times, serif;
 	font-weight: 700;
 }
@@ -23276,8 +23275,4 @@ html .rd-file-picker input[type="file"] {
 	.tabs-line .nav-link.font-fix {
 		font-size: 18px;
 	}
-}
-.brand-slogan.text-gray.font-italic.font-accent {
-    color: #888;
-    font-weight: 700;
 }

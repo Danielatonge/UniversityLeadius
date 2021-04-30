@@ -12,11 +12,11 @@ use yii\helpers\Url;
 <!-- Boxed Grid System-->
 <section class="section section-grid-demonstration section-xl bg-default">
     <div class="container">
-        <h3 class="font-weight-bold">Current LIUS Faculty Job Postings</h3>
+        <h3 class="font-weight-bold">Current Job Postings for Students</h3>
         <hr class="divider bg-madison">
         <p>Learn more about the employee agreements, benefits and services offered to staff and faculty at LIUS.
-            Access the following pages for <a href="<?= Url::to(['academics/internship-jobs']) ?>">Current LIUS Faculty Job Postings</a> and
-            for <a href="<?= Url::to(['academics/graduate-ta']) ?>">Current Graduate Teaching Assistantship Postings</a></p>
+            Access the following pages for <a href="<?= Url::to(['academics/internship-jobs']) ?>"><b>Current LIUS Faculty Job Postings</b></a> and
+            for <a href="<?= Url::to(['academics/graduate-ta']) ?>"><b>Current Graduate Teaching Assistantship Postings</b></a></p>
         <p>The Student Career Centre lists job postings from a variety of sources. If you are interested in any
             of the opportunities posted, please contact the employer directly. The LIUS Student Career Centre is
             not affiliated with any of the prospective employers below.</p>

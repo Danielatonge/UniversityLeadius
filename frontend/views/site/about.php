@@ -1,7 +1,6 @@
 <?php
-
 /* @var $this yii\web\View */
-
+use yii\helpers\Url;
 use yii\helpers\Html;
 
 $this->title = 'About';
@@ -10,59 +9,62 @@ $toImages = Yii::$app->request->baseUrl . '/images';
 ?>
 <div class="site-about">
     <!-- Classic Breadcrumbs-->
-    <section class="section breadcrumb-classic context-dark">
-        <div class="container">
-            <h1>About Us</h1>
-            <div class="offset-top-10 offset-md-top-35">
-                <ul class="list-inline list-inline-lg list-inline-dashed p">
-                    <li><a href="index.html">Home</a></li>
-                    <li>About Us
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <?= $this->render('breadcrumb', ["viewName" => "About Us"]) ?>
     <!--A Meeting of Minds-->
     <section class="section section-xl bg-default">
         <div class="container">
             <div class="row row-50">
                 <div class="col-md-4 order-md-2 text-md-left">
-                    <div class="inset-md-left-30"><img class="img-responsive d-inline-block img-rounded" src="" width="340" height="300" alt="">
+                    <div class="inset-md-left-30"><img class="img-responsive d-inline-block img-rounded" src="<?= $toImages . '/staff/gallery-15.jpeg' ?>" width="340" height="300" alt="">
                         <div class="offset-top-20">
-                            <h6 class="text-primary font-weight-bold">Dr. </h6>
+                            <h6 class="text-primary font-weight-bold">Prof. Anguish Penny </h6>
                         </div>
-                        <p>President of the Lead International University of Sherbrooke, served from 2020 to current.</p>
+                        <p>President of the Lead International University of Sherbrooke, served from 2005 to current.</p>
                     </div>
                 </div>
                 <div class="col-md-8 order-md-1 text-md-left">
-                    <h2 class="font-weight-bold">How it all started</h2>
-                    <hr class="divider bg-madison divider-md-0">
-                    <div class="offset-top-30 offset-sm-top-60">
-                        <p> LIUS operates a purely Canada based curriculum providing infinite quality opportunity and Managerial Human Capacity targeted for Africa,
-                            Asia, Europe, America, Antarctica and Australia, LIUS is a vibrant institution which aims at imposing itself as premier destination for research,
-                            innovation and training. The University imparts knowledge in all academic disciplines.
+            <h2 class="font-weight-bold">How it all started</h2>
+            <hr class="divider bg-madison divider-md-0">
+            <div class="offset-top-30 offset-sm-top-60">
+              <p> LIUS operates a purely Canada based curriculum providing infinite quality opportunity and Managerial
+                Human Capacity targeted for Africa,
+                Asia, Europe, America, Antarctica and Australia, LIUS is a vibrant institution which aims at imposing
+                itself as premier destination for research,
+                innovation and training. The University imparts knowledge in all academic disciplines.
 
-                        </p>
-                    </div>
-                    <p> LIUS is a bilingual university. It is located at the heart of the francophone community. It is a historic campus in a vibrant rural community with
-                        an intimate residential learning environment. It contains extensive land for agricultural research and is home to several recreational facilities.
-                        Learners at all stages of life and for entrepreneurs creating businesses out of new research
-                        LIUS is an accredited private university located in Sherbrooke-Quebec, Canada since 2005 and it currently serves more than 17,000 students through
-                        on-site and online programs around the world. The University develops productive and plethora relevant Bachelors, Masters and Doctorate level scholars
-                        to utilize their research and training in solving the substantial problems in their countries. The University offers a dynamic and flexible learning
-                        environment that inspires innovation and creativity and places on student access.
-                    </p>
-                    <p> LIUS prides itself on offering an intimate, cutting edge campus environment disposing of all resource essential for producing tomorrow’s leading petroleum
-                        engineer, technopreneurs, ICT experts, renewable energy engineers, and business managers. The University has also created collaborations, partnerships and
-                        exchange agreement with Canada and other international institutions that further enrich the academic, social and cultural diversity of our campus.
-                        Our students have quite a unique experience with the set of clubs and social activities for recreational purposes and community engagement work, seminars,
-                        and a whole lot of other activities vital in LIUS core value assimilation.
-                        LIUS operates within a board of trustees’ governance system.</p>
-                    <p>LIUS was founded as a private university in 1990, LIUS (The Canadian curriculum-based university serving all nations), has multiples campuses of the LIUS
-                        Foundation, LIUS Foundation is registered and chartered in the Quebec Province of Canada (chartered number: 60215381N) and LIUS recognized by the government
-                        and our programs are accredited by independent and international accreditation bodies to provide excellent learning experiences for our students and allowing
-                        our graduates to secure residencies in Canada, United State and other countries in the world. The Foundation is the funding organ of all LIUS Campuses.</p>
-                </div>
+              </p>
+            </div>
+            <p> LIUS is a bilingual university. It is located at the heart of the francophone community. It is a
+              historic campus in a vibrant rural community with
+              an intimate residential learning environment. It contains extensive land for agricultural research and is
+              home to several recreational facilities.
+              Learners at all stages of life and for entrepreneurs creating businesses out of new research LIUS is an
+              accredited private university located in Sherbrooke-Quebec, Canada since 2005 and it currently serves more
+              than 17,000 students through
+              on-site and online programs around the world. The University develops productive and plethora relevant
+              Bachelors, Masters and Doctorate level scholars
+              to utilize their research and training in solving the substantial problems in their countries. The
+              University offers a dynamic and flexible learning
+              environment that inspires innovation and creativity and places on student access.
+            </p>
+            <p> LIUS prides itself on offering an intimate, cutting edge campus environment disposing of all resource
+              essential for producing tomorrow’s leading petroleum
+              engineer, technopreneurs, ICT experts, renewable energy engineers, and business managers. The University
+              has also created collaborations, partnerships and
+              exchange agreement with Canada and other international institutions that further enrich the academic,
+              social and cultural diversity of our campus.
+              Our students have quite a unique experience with the set of clubs and social activities for recreational
+              purposes and community engagement work, seminars,
+              and a whole lot of other activities vital in LIUS core value assimilation.
+              LIUS operates within a board of trustees’ governance system.</p>
+            <p>Prof. Anguish Penny Ph.D. of Business Administration is Ottawa
+              Alumnae Endowed Professor at the University of Ottawa, Canada and is the Founding President of Lead
+              International University of Sherbrooke (LIUS) which focuses on interdisciplinary training of stellar
+              scholars based Canada/US based Institution providing infinite quality opportunity and Managerial Human
+              Capacity targeted for Africa, Asia, Europe, America, Antarctica and
+              Australia. He is Founding Executive Director of the International Business Space, and Founding Executive
+              Director Great Commission for Human Peace. He is a prolific conference organizer.</p>
+          </div>
             </div>
         </div>
     </section>
@@ -70,9 +72,9 @@ $toImages = Yii::$app->request->baseUrl . '/images';
     <section>
         <div class="container container-wide">
             <div class="row row-30">
-                <div class="col-md-4"><img class="img-responsive d-inline-block" src="<?= $toImages. '/history-01-570x370.jpg' ?>" width="570" height="370" alt=""></div>
-                <div class="col-md-4"><img class="img-responsive d-inline-block" src="<?= $toImages. '/history-02-570x370.jpg' ?>" width="570" height="370" alt=""></div>
-                <div class="col-md-4"><img class="img-responsive d-inline-block" src="<?= $toImages. '/history-03-570x370.jpg' ?>" width="570" height="370" alt=""></div>
+                <div class="col-md-4"><img class="img-responsive d-inline-block" src="<?= $toImages . '/history-01-570x370.jpg' ?>" width="570" height="370" alt=""></div>
+                <div class="col-md-4"><img class="img-responsive d-inline-block" src="<?= $toImages . '/history-02-570x370.jpg' ?>" width="570" height="370" alt=""></div>
+                <div class="col-md-4"><img class="img-responsive d-inline-block" src="<?= $toImages . '/history-03-570x370.jpg' ?>" width="570" height="370" alt=""></div>
             </div>
         </div>
     </section>
@@ -213,63 +215,81 @@ $toImages = Yii::$app->request->baseUrl . '/images';
 
     <!--3 Columns Layout-->
     <section class="section section-xl bg-catskill">
-        <div class="container">
-            <h2 class="font-weight-bold">Our Staff</h2>
-            <hr class="divider bg-madison text-md-left">
-            <div class="row row-50 text-md-left offset-top-60">
-                <div class="col-md-6 col-xl-4">
-                    <div class="unit unit-sm flex-column flex-md-row unit-spacing-lg">
-                        <div class="unit-left"><img class="img-responsive d-inline-block img-rounded" src="<?= $toImages. '/users/user-kathy-gibson-110x110.jpg' ?>" width="110" height="110" alt=""></div>
-                        <div class="unit-body">
-                            <h6 class="font-weight-bold text-primary"><a href="team-member-profile.html">Kathy Gibson</a></h6>
-                            <div class="offset-sm-top-30">
-                                <ul class="list list-unstyled">
-                                    <li><span class="icon icon-xs mdi mdi-phone text-middle text-gray" style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block text-black inset-left-10" href="tel:#">1-800-1234-567</a></li>
-                                    <li><span class="icon icon-xs mdi mdi-email-outline text-middle text-gray" style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block inset-left-10" href="mailto:info@demolink.org">info@demolink.org</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offset-top-20">
-                        <p>Professor of Experimental & Social Psychology, Senior Scientist, President of American Psychology Association.</p>
-                    </div>
+      <div class="container">
+        <h2 class="font-weight-bold">Our Staff</h2>
+        <hr class="divider bg-madison text-md-left">
+        <div class="row row-50 text-md-left offset-top-60">
+          <div class="col-md-6 col-xl-4">
+            <div class="unit unit-sm flex-column flex-md-row unit-spacing-lg">
+              <div class="unit-left"><img class="img-responsive d-inline-block img-rounded"
+                  src="<?= $toImages . '/staff/gallery-13.jpeg' ?>" width="110" height="110" alt=""></div>
+              <div class="unit-body">
+                <h6 class="font-weight-bold text-primary"><a href="#">Prof. Booth Annie</a></h6>
+                <div class="offset-sm-top-30">
+                  <ul class="list list-unstyled">
+                    <li><span class="icon icon-xs mdi mdi-phone text-middle text-gray"
+                        style="font-size: 24px; line-height: 24px"></span><a
+                        class="d-inline-block text-black inset-left-10" href="tel:#">1-800-6732-863</a></li>
+                    <li><span class="icon icon-xs mdi mdi-email-outline text-middle text-gray"
+                        style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block inset-left-10"
+                        href="mailto:">provost@leadius.org</a></li>
+                  </ul>
                 </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="unit unit-sm flex-column flex-md-row unit-spacing-lg">
-                        <div class="unit-left"><img class="img-responsive d-inline-block img-rounded" src="<?= $toImages. '/users/user-walter-myers-110x110.jpg' ?>" width="110" height="110" alt=""></div>
-                        <div class="unit-body">
-                            <h6 class="font-weight-bold text-primary"><a href="team-member-profile.html">Walter Myers</a></h6>
-                            <div class="offset-sm-top-30">
-                                <ul class="list list-unstyled">
-                                    <li><span class="icon icon-xs mdi mdi-phone text-middle text-gray" style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block text-black inset-left-10" href="tel:#">1-800-1234-567</a></li>
-                                    <li><span class="icon icon-xs mdi mdi-email-outline text-middle text-gray" style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block inset-left-10" href="mailto:info@demolink.org">info@demolink.org</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offset-top-20">
-                        <p>Professor of Graphic Design and Visual Animation Faculty, Coordinator of Graphic Design Courses.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="unit unit-sm flex-column flex-md-row unit-spacing-lg">
-                        <div class="unit-left"><img class="img-responsive d-inline-block img-rounded" src="<?= $toImages. '/users/user-kathleen-mendoza-110x110.jpg' ?>" width="110" height="110" alt=""></div>
-                        <div class="unit-body">
-                            <h6 class="font-weight-bold text-primary"><a href="team-member-profile.html">Kathleen Mendoza</a></h6>
-                            <div class="offset-sm-top-30">
-                                <ul class="list list-unstyled">
-                                    <li><span class="icon icon-xs mdi mdi-phone text-middle text-gray" style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block text-black inset-left-10" href="tel:#">1-800-1234-567</a></li>
-                                    <li><span class="icon icon-xs mdi mdi-email-outline text-middle text-gray" style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block inset-left-10" href="mailto:info@demolink.org">info@demolink.org</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offset-top-20">
-                        <p>Director of Graduate Studies at JCU, Professor of Political Economy and Applied Economics.</p>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="offset-top-20">
+              <p>Professor in the Graduate School of Public and International Affairs and Director of the Center...</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="unit unit-sm flex-column flex-md-row unit-spacing-lg">
+              <div class="unit-left"><img class="img-responsive d-inline-block img-rounded"
+                  src="<?= $toImages . '/staff/gallery-4.jpeg' ?>" width="110" height="110" alt=""></div>
+              <div class="unit-body">
+                <h6 class="font-weight-bold text-primary"><a href="#">Bleiker Katherine</a></h6>
+                <div class="offset-sm-top-30">
+                  <ul class="list list-unstyled">
+                    <li><span class="icon icon-xs mdi mdi-phone text-middle text-gray"
+                        style="font-size: 24px; line-height: 24px"></span><a
+                        class="d-inline-block text-black inset-left-10" href="tel:#">1-800-6352-392</a></li>
+                    <li><span class="icon icon-xs mdi mdi-email-outline text-middle text-gray"
+                        style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block inset-left-10"
+                        href="mailto:#">b.katherine@leadius.org</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="offset-top-20">
+              <p>Professor of Graphic Design and Visual Animation Faculty, Coordinator of Graphic Design Courses.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="unit unit-sm flex-column flex-md-row unit-spacing-lg">
+              <div class="unit-left"><img class="img-responsive d-inline-block img-rounded"
+                  src="<?= $toImages . '/staff/gallery-12.jpeg' ?>" width="110" height="110" alt=""></div>
+              <div class="unit-body">
+                <h6 class="font-weight-bold text-primary"><a href="#">Dr. Ed Andrews</a></h6>
+                <div class="offset-sm-top-30">
+                  <ul class="list list-unstyled">
+                    <li><span class="icon icon-xs mdi mdi-phone text-middle text-gray"
+                        style="font-size: 24px; line-height: 24px"></span><a
+                        class="d-inline-block text-black inset-left-10" href="tel:#">1-800-8467-722</a></li>
+                    <li><span class="icon icon-xs mdi mdi-email-outline text-middle text-gray"
+                        style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block inset-left-10"
+                        href="mailto:registrar@leadius.org">registrar@leadius.org</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="offset-top-20">
+              <p>Director of Graduate Studies at LIUS, Professor of Political Economy and Applied Economics.</p>
+            </div>
+          </div>
         </div>
+        <div class="offset-top-50 offset-lg-top-56"><a class="btn btn-icon btn-icon-right button-primary"
+            href="<?= Url::to(['academics/our-staff']) ?>"><span class="icon fa fa-arrow-right"></span><span>More</span></a>
+        </div>
+      </div>
     </section>
 
 

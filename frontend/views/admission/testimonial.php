@@ -8,19 +8,8 @@ $toImages = Yii::$app->request->baseUrl . '/images';
 ?>
 
 <!-- Classic Breadcrumbs-->
-<section class="section breadcrumb-classic context-dark">
-    <div class="container">
-        <h1> Testimonial </h1>
-        <div class="offset-top-10 offset-md-top-35">
-            <ul class="list-inline list-inline-lg list-inline-dashed p">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Admission</a></li>
-                <li>Testimonial
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
+<?= $this->render('breadcrumb', ["viewName" => "Testimonial"]) ?>
+
 <div id="fb-root"></div>
 <!-- Testimonials -->
 <section class="section section-xl bg-catskill">
@@ -67,7 +56,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                     class="unit flex-row align-items-center unit-spacing-xxs unit-sm flex-md-column-reverse">
                                     <div class="unit-left"><img
                                             class="img-responsive rounded-circle d-inline-block"
-                                            src="<?= $toImages. '/users/user-maria-freeman-90x90.jpg' ?>" width="90"
+                                            src="<?= $toImages. '/staff/gallery-21.jpeg' ?>" width="90"
                                             height="90" alt="">
                                         <p class="text-primary">Emily Zegar</p>
                                     </div>
@@ -109,7 +98,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                     class="unit flex-row align-items-center unit-spacing-xxs unit-sm flex-md-column-reverse">
                                     <div class="unit-left"><img
                                             class="img-responsive rounded-circle d-inline-block"
-                                            src="<?= $toImages. '/users/user-maria-freeman-90x90.jpg' ?>" width="90"
+                                            src="<?= $toImages. '/staff/gallery-9.jpeg' ?>" width="90"
                                             height="90" alt="">
                                         <p class="text-primary">Jokinen Nancy</p>
                                     </div>
@@ -153,7 +142,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                     class="unit flex-row align-items-center unit-spacing-xxs unit-sm flex-md-column-reverse">
                                     <div class="unit-left"><img
                                             class="img-responsive rounded-circle d-inline-block"
-                                            src="<?= $toImages. '/users/user-maria-freeman-90x90.jpg' ?>" width="90"
+                                            src="<?= $toImages. '/staff/gallery-29.jpeg' ?>" width="90"
                                             height="90" alt="">
                                         <p class="text-primary">Keen Kevin</p>
                                     </div>

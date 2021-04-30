@@ -30,9 +30,9 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                 <li>
                                     <div class="unit flex-row align-items-center unit-spacing-xs">
                                         <div class="unit-left"><span class="icon mdi mdi-phone text-middle"></span></div>
-                                        <div class="unit-body"><a href="tel:#">8-020-618-0645,</a> <a class="d-block d-lg-inline-block"
-                                                                                                      href="tel:#">819-493-3499</a>
-                                        </div>
+                                        <div class="unit-body"><a href="tel:#">+1-707-654-3561,</a> <a class="d-block d-lg-inline-block"
+                            href="tel:#">+1-724-569-6367</a>
+                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -52,8 +52,9 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                         <div class="rd-navbar-top-panel-right-part">
                             <div class="rd-navbar-top-panel-left-part">
                                 <div class="unit flex-row align-items-center unit-spacing-xs">
+                                    <div class="unit-body"><a href="<?= Url::to(['site/covid-19']) ?>">COVID-19</a></div>
                                     <div class="unit-left"><span class="icon mdi mdi-login text-middle"></span></div>
-                                    <div class="unit-body"><a href="<?= Url::to(['site/login']) ?>">Login/Register</a></div>
+                                    <!--<div class="unit-body"><a href="<?= Url::to(['site/login']) ?>">Login/Register</a></div>-->
                                 </div>
                             </div>
                         </div>
@@ -85,14 +86,17 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                 </li>
                                 <li><a href="#">Admission</a>
                                     <ul class="rd-navbar-dropdown">
-                                        <li><a href="<?= Url::to(['admission/apply-general']) ?>">APPLY TO LEADIUS</a>
-                                        </li>
+                                        <li><a href="<?= Url::to(['admission/apply-general']) ?>">Information for Applicants</a>
+                        </li>
+                                        
                                         <li><a href="<?= Url::to(['admission/transfer-readmission']) ?>">Transfer and Readmission</a>
                                         </li>
                                         <li><a href="<?= Url::to(['admission/testimonial']) ?>">Testimonials</a>
                                         </li>
-                                        <li><a href="#">Dashboard</a>
+                                        <li><a href="<?= Url::to(['admission/apply']) ?>">APPLY TO LIUS</a>
                                         </li>
+<!--                                        <li><a href="#">Dashboard</a>
+                                        </li>-->
                                     </ul>
                                 </li>
                                 <li><a href="#">Academics</a>
@@ -137,10 +141,10 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                                 <li>
                                                     <h6>Additional Experiences</h6>
                                                     <ul class="list-unstyled offset-lg-top-20">
-                                                        <li><a href="#">News</a></li>
-                                                        <li><a href="#">Upcoming Events</a></li>
+<!--                                                        <li><a href="#">News</a></li>-->
+                                                        <li><a href="<?= Url::to(['academics/calendar']) ?>">Upcoming Events</a></li>
                                                         <li><a href="<?= Url::to(['academics/internship-jobs']) ?>">Internships &amp; Jobs</a></li>
-                                                        <li><a href="#">Resources &amp; Advising</a></li>
+<!--                                                        <li><a href="#">Resources &amp; Advising</a></li>-->
                                                         <li><a href="<?= Url::to(['academics/beyond']) ?>">Beyond the Classroom</a></li>
                                                     </ul>
                                                 </li>
@@ -157,8 +161,6 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                         <li><a href="<?= Url::to(['campus-life/gallery-general']) ?>">Gallery</a>
                                         </li>
                                         <li><a href="<?= Url::to(['campus-life/activities']) ?>">Activities</a>
-                                        </li>
-                                        <li><a href="<?= Url::to(['campus-life/covid-19']) ?>">COVID-19</a>
                                         </li>
                                     </ul>
                                 </li>
