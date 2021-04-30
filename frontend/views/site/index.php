@@ -29,7 +29,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                             ladder.</h5>
                                     </div>
                                     <div class="offset-top-20 offset-xl-top-40" data-caption-animate="fadeInUp"
-                                         data-caption-delay="400"><a class="btn button-primary" href="<?= Url::to(['site/apply']) ?>">Apply Now</a>
+                                         data-caption-delay="400"><a class="btn button-primary" href="<?= Url::to(['admission/apply']) ?>">Apply Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                             specialist.</h5>
                                     </div>
                                     <div class="offset-top-20 offset-xl-top-40" data-caption-animate="fadeInUp"
-                                         data-caption-delay="400"><a class="btn button-primary" href="<?= Url::to(['site/apply-general']) ?>">Learn More</a>
+                                         data-caption-delay="400"><a class="btn button-primary" href="<?= Url::to(['admission/apply-general']) ?>">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -341,7 +341,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                 <div class="container section-70 section-xl-100 section-xl-bottom-114">
                     <div class="row justify-content-sm-center align-items-sm-center">
                         <div class="col-md-3 text-md-right order-md-2"><img class="img-responsive d-inline-block rounded-circle"
-                                                                            src="<?= $toImages . '/staff/gallery-9.jpeg' ?>" width="230" height="230" alt=""></div>
+                                                                            src="<?= $toImages . '/staff/gallery-8.jpeg' ?>" width="230" height="230" alt=""></div>
                         <div class="col-md-9 order-md-1">
                             <div class="quote-classic-boxed text-left">
                                 <div class="quote-body">
