@@ -1,4 +1,5 @@
 <?php
+
 return [
     'components' => [
         'db' => [
@@ -10,11 +11,16 @@ return [
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
-            'viewPath' => '@common/mail',
-            // send all mails to a file by default. You have to set
-            // 'useFileTransport' to false and configure a transport
-            // for the mailer to send real emails.
-            'useFileTransport' => true,
+            'useFileTransport' => false,
+            'viewPath' => '@frontend/mail',
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'smtp.ipage.com',
+                'username' => 'admin@leadius.org',
+                'password' => '!Leads.$$$2020',
+                'port' => '465',
+                'encryption' => 'ssl',
+            ],
         ],
     ],
 ];

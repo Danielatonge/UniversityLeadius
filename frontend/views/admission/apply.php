@@ -4,6 +4,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+
 $toImages = Yii::$app->request->baseUrl . '/images';
 $toFile = Yii::$app->request->baseUrl . '/files';
 ?>
@@ -40,23 +43,23 @@ $toFile = Yii::$app->request->baseUrl . '/files';
                     <h2 class="font-weight-bold text-white">Upload admission form</h2>
                     <hr class="divider divider-md-0 bg-default">
                     <div class="offset-top-60">
-                        <form class="rd-mailform text-left" data-form-output="form-output-global" data-form-type="contact"
-                              method="post" action="">
-
+                        <?php $form = ActiveForm::begin(); ?>
+                        
                             <div class="offset-top-35">
                                 <div class="form-wrap">
                                     <!-- RD Filepicker-->
-                                    <div class="rd-file-picker" id="fill-form-file">
-                                        <input name="file" type="file" multiple>
-                                        <div class="rd-file-picker-meta"></div>
-                                        <div class="rd-file-picker-btn btn text-left"><span>Select a File</span></div>
-                                    </div>
+                                    <?= $form->field($model, 'afile', ['template' => 
+                                        '<div class="rd-file-picker" id="fill-form-file">{input}' . 
+                                            '<div class="rd-file-picker-meta"></div>' . 
+                                            '<div class="rd-file-picker-btn btn text-left"><span>Select a File</span></div>' . 
+                                            '</div></div>{error}{hint}'])->fileInput() ?>
+
                                 </div>
                             </div>
                             <div class="text-center text-xl-left offset-top-30 context-dark">
-                                <button class="btn button-primary" type="submit">Apply Now</button>
+                                <?= Html::submitButton('Apply Now', ['class' => 'btn button-primary']) ?>
                             </div>
-                        </form>
+                        <?php ActiveForm::end(); ?>
                     </div>
                 </div>
             </div>

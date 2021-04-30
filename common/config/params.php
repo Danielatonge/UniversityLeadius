@@ -1,9 +1,9 @@
 <?php
 return [
-    'adminEmail' => 'admin@example.com',
+    'adminEmail' => 'admin@leadius.org',
     'supportEmail' => 'support@example.com',
-    'senderEmail' => 'noreply@example.com',
-    'senderName' => 'Example.com mailer',
+    'senderEmail' => 'noreply@leadius-applicant.org',
+    'senderName' => 'Leadius Applicant',
     'user.passwordResetTokenExpire' => 3600,
     'user.passwordMinLength' => 4,
 ];

@@ -1,12 +1,10 @@
 <?php
-
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap4\ActiveForm */
 /* @var $model \frontend\models\ContactForm */
 
 use yii\helpers\Html;
-use yii\bootstrap4\ActiveForm;
-use yii\captcha\Captcha;
+use yii\widgets\ActiveForm;
 
 $this->title = 'Contact';
 $this->params['breadcrumbs'][] = $this->title;
@@ -35,43 +33,49 @@ $this->params['breadcrumbs'][] = $this->title;
                         <p>You can contact us any way that is convenient for you. We are available 24/7 via fax or email. You can also use a quick contact form below or visit our office personally. We would be happy to answer your questions.</p>
                     </div>
                     <div class="offset-top-30">
-                        <form class="rd-mailform text-left" data-form-output="form-output-global" data-form-type="contact" method="post" action="https://livedemo00.template-help.com/wt_59029_v3/bat/rd-mailform.php">
+                        <?php $form = ActiveForm::begin(); ?>
+                        
                             <div class="row row-12">
                                 <div class="col-xl-6">
-                                    <div class="form-wrap">
-                                        <label class="form-label form-label-outside" for="contact-me-name">First name</label>
-                                        <input class="form-input" id="contact-me-name" type="text" name="name" data-constraints="@Required">
-                                    </div>
+                                    <?= $form->field($model, 'fname', ['template' => 
+                                        '<div class="form-wrap">' . 
+                                            '{label}' . 
+                                            '{input}' . 
+                                            '</div>{error}{hint}'])->textInput(['class' => 'form-input'])->label('First name', ['class' => 'form-label form-label-outside']) ?>
                                 </div>
                                 <div class="col-xl-6">
-                                    <div class="form-wrap">
-                                        <label class="form-label form-label-outside" for="contact-me-last-name">Last name</label>
-                                        <input class="form-input" id="contact-me-last-name" type="text" name="last-name" data-constraints="@Required">
-                                    </div>
+                                    <?= $form->field($model, 'lname', ['template' => 
+                                        '<div class="form-wrap">' . 
+                                            '{label}' . 
+                                            '{input}' . 
+                                            '</div>{error}{hint}'])->textInput(['class' => 'form-input'])->label('Last name', ['class' => 'form-label form-label-outside']) ?>
                                 </div>
                                 <div class="col-xl-6">
-                                    <div class="form-wrap">
-                                        <label class="form-label form-label-outside" for="contact-me-email">E-mail</label>
-                                        <input class="form-input" id="contact-me-email" type="email" name="email" data-constraints="@Required @Email">
-                                    </div>
+                                    <?= $form->field($model, 'email', ['template' => 
+                                        '<div class="form-wrap">' . 
+                                            '{label}' . 
+                                            '{input}' . 
+                                            '</div>{error}{hint}'])->input('email', ['class' => 'form-input'])->label('E-mail', ['class' => 'form-label form-label-outside']) ?>
                                 </div>
                                 <div class="col-xl-6">
-                                    <div class="form-wrap">
-                                        <label class="form-label form-label-outside" for="contact-me-phone">Phone</label>
-                                        <input class="form-input" id="contact-me-phone" type="text" name="phone" data-constraints="@Required @IsNumeric">
-                                    </div>
+                                    <?= $form->field($model, 'tel', ['template' => 
+                                        '<div class="form-wrap">' . 
+                                            '{label}' . 
+                                            '{input}' . 
+                                            '</div>{error}{hint}'])->textInput(['type' => 'tel','class' => 'form-input'])->label('Phone', ['class' => 'form-label form-label-outside']) ?>
                                 </div>
                                 <div class="col-xl-12">
-                                    <div class="form-wrap">
-                                        <label class="form-label form-label-outside" for="contact-me-message">Message</label>
-                                        <textarea class="form-input" id="contact-me-message" name="message" data-constraints="@Required" style="height: 220px"></textarea>
-                                    </div>
+                                    <?= $form->field($model, 'body', ['template' => 
+                                        '<div class="form-wrap">' . 
+                                            '{label}' . 
+                                            '{input}' . 
+                                            '</div>{error}{hint}'])->textarea(['class' => 'form-input', 'style' => 'height: 220px'])->label('Message', ['class' => 'form-label form-label-outside']) ?>
                                 </div>
                             </div>
                             <div class="text-center text-xl-left offset-top-20">
-                                <button class="btn button-primary" type="submit">Send Message</button>
+                                <?= Html::submitButton('Send Message', ['class' => 'btn button-primary']) ?>
                             </div>
-                        </form>
+                        <?php ActiveForm::end(); ?>
                     </div>
                 </div>
                 <div class="col-sm-10 col-lg-4 text-left">
@@ -79,10 +83,14 @@ $this->params['breadcrumbs'][] = $this->title;
                         <h6 class="font-weight-bold">Socials</h6>
                         <div class="hr bg-gray-light offset-top-10"></div>
                         <ul class="list-inline list-inline-xs list-inline-madison">
-                            <li><a class="icon novi-icon icon-xxs fa fa-facebook icon-circle icon-gray-light-filled" href="contacts.html#"></a></li>
-                            <li><a class="icon novi-icon icon-xxs fa fa-twitter icon-circle icon-gray-light-filled" href="contacts.html#"></a></li>
-                            <li><a class="icon novi-icon icon-xxs fa fa-google icon-circle icon-gray-light-filled" href="contacts.html#"></a></li>
-                            <li><a class="icon novi-icon icon-xxs fa fa-instagram icon-circle icon-gray-light-filled" href="contacts.html#"></a></li>
+                            <li><a class="icon icon-xxs fa fa-facebook icon-circle icon-gray-light-filled" href="https://web.facebook.com/lius.university/?modal=composer&notif_id=1615666666996383&notif_t=aymt_simplified_make_page_post&ref=notif"></a>
+                            </li>
+                            <li><a class="icon icon-xxs fa fa-twitter icon-circle icon-gray-light-filled" href="https://mobile.twitter.com/LeadSherbrook"></a>
+                            </li>
+                            <li><a class="icon icon-xxs fa fa-whatsapp icon-circle icon-gray-light-filled" href="https://wa.me/17245696367"></a>
+                            </li>
+                            <li><a class="icon icon-xxs fa fa-instagram icon-circle icon-gray-light-filled" href="https://www.instagram.com/lius.university/"></a>
+                            </li>
                         </ul>
                         <div class="offset-top-30 offset-md-top-60">
                             <h6 class="font-weight-bold">Phones</h6>
@@ -91,8 +99,8 @@ $this->params['breadcrumbs'][] = $this->title;
                             </div>
                             <div class="offset-top-15">
                                 <ul class="list list-unstyled">
-                                    <li><span class="icon icon-xs text-madison mdi mdi-phone text-middle"></span><a class="text-middle inset-left-10 text-dark" href="tel:8-020-618-0645">8-020-618-0645</a></li>
-                                    <li><span class="icon icon-xs text-madison mdi mdi-phone text-middle"></span><a class="text-middle inset-left-10 text-dark" href="tel:819-493-3499">819-493-3499</a></li>
+                                    <li><span class="icon icon-xs text-madison mdi mdi-phone text-middle"></span><a class="text-middle inset-left-10 text-dark" href="tel:1-707-654-3561">+1-707-654-3561</a></li>
+                                    <li><span class="icon icon-xs text-madison mdi mdi-phone text-middle"></span><a class="text-middle inset-left-10 text-dark" href="tel:1-724-569-6367">+1-724-569-6367</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -103,7 +111,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             </div>
                             <div class="offset-top-15">
                                 <ul class="list list-unstyled">
-                                    <li><span class="icon icon-xs text-madison mdi mdi-email-outline text-middle"></span><a class="text-primary text-middle inset-left-10" href="mailto:leadius@admin.org">leadius@admin.org</a></li>
+                                    <li><span class="icon icon-xs text-madison mdi mdi-email-outline text-middle"></span><a class="text-primary text-middle inset-left-10" href="mailto:leadius@admin.org">admin@leadius.org</a></li>
                                 </ul>
                             </div>
                         </div>

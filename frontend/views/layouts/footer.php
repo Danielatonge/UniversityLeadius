@@ -44,7 +44,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                             <div class="unit flex-row align-items-center unit-spacing-xs">
                                 <div class="unit-left"><span class="icon mdi mdi-email-open text-middle icon-xs text-madison"></span>
                                 </div>
-                                <div class="unit-body"><a href="mailto:#">leadius@admin.org</a></div>
+                                <div class="unit-body"><a href="mailto:#">admin@leadius.org</a></div>
                             </div>
                         </li>
                     </ul>
@@ -55,7 +55,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                         </li>
                         <li><a class="icon icon-xxs fa fa-twitter icon-circle icon-gray-light-filled" href="https://mobile.twitter.com/LeadSherbrook"></a>
                         </li>
-                        <li><a class="icon icon-xxs fa fa-google icon-circle icon-gray-light-filled" href="#"></a>
+                        <li><a class="icon icon-xxs fa fa-whatsapp icon-circle icon-gray-light-filled" href="https://wa.me/17245696367"></a>
                         </li>
                         <li><a class="icon icon-xxs fa fa-instagram icon-circle icon-gray-light-filled" href="https://www.instagram.com/lius.university/"></a>
                         </li>

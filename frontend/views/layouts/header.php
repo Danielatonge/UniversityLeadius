@@ -44,7 +44,7 @@ $toImages = Yii::$app->request->baseUrl . '/images';
                                 <li>
                                     <div class="unit flex-row align-items-center unit-spacing-xs">
                                         <div class="unit-left"><span class="icon mdi mdi-email-open text-middle"></span></div>
-                                        <div class="unit-body"><a href="mailto:leadius@admin.org">leadius@admin.org</a></div>
+                                        <div class="unit-body"><a href="mailto:leadius@admin.org">admin@leadius.org</a></div>
                                     </div>
                                 </li>
                             </ul>
